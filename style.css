@@ -2,61 +2,74 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 body{
     background-color: #39297b;
     color: #fff;
-    text-align: center;
 }
 h2{
-    margin-top: 8rem;
+    text-align: center;
+    margin: 50px auto;
+    font-weight: 600;
 }
-#searchText{
-    height: 2.7rem;
-    width: 18rem;
-    background-color: #434989;
-    padding-left: 2rem;
-    font-size: 1rem;
-    color: white;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+form{
+    width: 50%;
+    max-width: 500px;
+    margin: 10px auto;
+    height: 40px;
+    background-color: #434984;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 form input{
+    flex: 1;
+    height: 100%;
     border: 0;
     outline: 0;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 30px;
 }
 form button{
-    height: 2.7rem;
-    width: 5rem;
-    margin-top: 2rem;
+    height: 100%;
+    padding: 0 20px;
     background-color: #ff3929;
-    color: white;
-    font-size: 1rem;
+    color: #fff;
     border: 0;
     outline: 0;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    position: relative;
-    right: 10px;
+    font-size: 15px;
     cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 ::placeholder{
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 15px;
 }
-#Show-more{
-    height: 2rem;
-    width: 6rem;
-    margin-top: 2rem;
+#show-more{
+    height: 30px;
+    padding: 0 8px;
     background-color: #ff3929;
-    color: white;
-    font-size: 0.8rem;
+    color: #fff;
     border: 0;
     outline: 0;
-    border-radius: 0.5rem;
-    position: relative;
-    right: 10px;
+    font-size: 15px;
     cursor: pointer;
     display: none;
+    margin: 10px auto;
+}
+#search-result{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+#search-result img{
+    height: 130px;
+    width: 200px;
 }
